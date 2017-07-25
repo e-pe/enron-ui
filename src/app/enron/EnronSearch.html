@@ -1,0 +1,21 @@
+<header>
+    <input #searchInput type="text" placeholder="Search for emails" />
+    <button type="button" (click)="searchClick(searchInput.value)">Search</button>
+</header>
+<main>
+    <div>
+        <span>Results found:</span>
+        <span>{{ mailCount }}</span>
+    </div>
+    <table class="mail-table">
+        <tbody>
+            <tr class="mail-row" *ngFor="let mail of mails">
+                <td class="mail-cell">
+                    <div>{{ mail.id }}</div>
+                    <div>{{ mail.content.sender }}</div>
+                    <div>{{ mail.content.text }}</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>

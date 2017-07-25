@@ -1,0 +1,12 @@
+table.mail-table {
+    width: 100%;
+}
+
+td.mail-cell {
+    vertical-align: top;
+}
+
+tr.mail-row {
+    margin-bottom: 50px;
+    display: block;
+}
